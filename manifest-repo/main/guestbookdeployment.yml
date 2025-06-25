@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-        - image: ashishrlad/main-java-app:15882671680
+        - image: ashishrlad/main-simple-java-app:15884045212
           name: guestbook-ui
           ports:
             - containerPort: 80
