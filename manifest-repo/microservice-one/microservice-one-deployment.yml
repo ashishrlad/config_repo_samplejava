@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: microservice-one-ui
 spec:
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: guestbook-ui
+      app: microservice-one-ui
   template:
     metadata:
       labels:
-        app: guestbook-ui
+        app: microservice-one-ui
     spec:
       containers:
-        - image: gcr.io/google-samples/gb-frontend:v5
-          name: guestbook-ui
+        - image: ashishrlad/main-simple-java-app:15896591780
+          name: microservice-one-ui
           ports:
             - containerPort: 80
