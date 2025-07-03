@@ -14,7 +14,7 @@ spec:
         app: microservice-one-ui
     spec:
       containers:
-        - image: ashishrlad/main-simple-java-app:15896591780
+        - image: ashishrlad/microservice-one:master-16042472341
           name: microservice-one-ui
           ports:
             - containerPort: 80
